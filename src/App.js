@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Footer";
 import Temperature from "./Temperature";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Temperature />
+        <Footer />
       </div>
     </div>
   );
