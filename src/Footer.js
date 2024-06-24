@@ -13,9 +13,9 @@ export default function Footer() {
         >
           Gabriela Aguilera
         </a>{" "}
-        and is on{" "}
+        and is open-sourced on{" "}
         <a
-          href="https://github.com/gabiaguilerav/meteo.git"
+          href="https://github.com/gabiaguilerav/react-weather-app.git"
           target={"_blank"}
           rel="noreferrer"
         >
