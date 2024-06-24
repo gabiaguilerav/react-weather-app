@@ -1,9 +1,12 @@
 import "./App.css";
+import Temperature from "./Temperature";
 
 function App() {
   return (
     <div className="App">
-      <div className="container"></div>
+      <div className="container">
+        <Temperature />
+      </div>
     </div>
   );
 }
