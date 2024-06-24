@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
+import React from "react";
 import Temperature from "./Temperature.js";
 import Footer from "./Footer.js";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="container">
@@ -13,5 +13,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
