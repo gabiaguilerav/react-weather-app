@@ -44,7 +44,7 @@ export default function Temperature(props) {
 
   if (loaded) {
     return (
-      <div>
+      <div className="container">
         {form}
         <div className="Temperature">
           <h1>{city}</h1>
