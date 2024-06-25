@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import "./Temperature.css";
+import "./Weather.css";
 import axios from "axios";
 
-export default function Temperature(props) {
+export default function Weather() {
   const [city, setCity] = useState("");
   const [loaded, setLoaded] = useState(false);
   const [weather, setWeather] = useState({});
 
   function displayWeather(response) {
+    console.log(response.data);
     setLoaded(true);
     setWeather({
       temperature: response.data.main.temp,
@@ -15,6 +16,8 @@ export default function Temperature(props) {
       humidity: response.data.main.humidity,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
+      city: response.data.name,
+      date: "Monday, 10:00",
     });
   }
 
@@ -74,7 +77,7 @@ export default function Temperature(props) {
 
             <div className="more-data">
               <div>
-                <span>Monday 10:00</span>, <span>{weather.description}</span>
+                <span>{weather.date}</span>, <span>{weather.description}</span>
               </div>
               <div>
                 Humidity:{" "}
@@ -92,6 +95,11 @@ export default function Temperature(props) {
       </div>
     );
   } else {
-    return form;
+    let city = "Maastricht";
+    let apiKey = "5aac6d0188c6f17d6d2bbe6591b6fef0";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${"Maastricht"}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayWeather);
+
+    return <div>{form}</div>;
   }
 }
