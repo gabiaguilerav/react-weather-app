@@ -13,7 +13,7 @@ form {
 
 #city-name {
   background-color: white;
-  border: 1px #405983 solid;
+  border: 1px solid var(--dark-blue);
   border-radius: 5px;
   font-size: 22px;
   transition: all 200ms ease-in-out;
@@ -21,11 +21,11 @@ form {
 }
 
 #city-name:hover {
-  border: 1px #fa7560 solid;
+  border: 1px solid var(--pink);
 }
 
 #enter {
-  background-color: #405983;
+  background-color: var(--dark-blue);
   border: 1px transparent solid;
   border-radius: 5px;
   font-size: 22px;
@@ -35,8 +35,8 @@ form {
 }
 
 #enter:hover {
-  border: 1px #fa7560 solid;
-  background-color: #fa7560;
+  border: 1px solid var(--pink);
+  background-color: var(--pink);
   color: white;
   cursor: pointer;
 }
@@ -58,10 +58,17 @@ form {
 }
 
 .icon-image {
+  padding: 0;
   width: 80px;
   margin: 0;
   text-align: center;
   vertical-align: top;
+}
+
+.degrees {
+  font-size: 27px;
+  font-weight: 300;
+  color: var(--dark-blue);
 }
 
 .more-data {
@@ -72,7 +79,7 @@ form {
 }
 
 .more-data strong {
-  color: #fa7560;
+  color: var(--pink);
 }
 
 .prognoses {
@@ -91,7 +98,7 @@ form {
 
 .day {
   font-size: 27px;
-  color: #fa7560;
+  color: var(--pink);
 }
 
 .img {

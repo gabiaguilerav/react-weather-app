@@ -10,6 +10,9 @@
     rgb(240, 251, 244) 100.7%
   );
   background-attachment: fixed;
+  --light-purple: rgb(139, 126, 160);
+  --dark-blue: #253d66;
+  --pink: #fa7560;
 }
 
 .container-app {

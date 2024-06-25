@@ -11,11 +11,11 @@ p {
 a {
   text-decoration: none;
   font-weight: 500;
-  color: #405983;
+  color: var(--pink);
   transition: all 200ms ease-in-out;
 }
 
 a:hover {
   cursor: pointer;
-  color: #fa7560;
+  color: var(--dark-blue);
 }

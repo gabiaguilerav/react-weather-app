@@ -65,7 +65,11 @@ export default function Temperature(props) {
                 />
               </span>
               <span>{Math.round(weather.temperature)}</span>
-              <span>°C</span>
+              <span className="degrees">
+                <span>°C</span>
+                {" | "}
+                <span>°F</span>
+              </span>
             </div>
 
             <div className="more-data">
