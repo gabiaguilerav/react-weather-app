@@ -30,16 +30,22 @@ export default function Temperature(props) {
   }
 
   let form = (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="search"
-        placeholder="Enter a city..."
-        required
-        id="city-name"
-        onChange={updateCity}
-      />
-      <input type="submit" id="enter" />
-    </form>
+    <div className="container">
+      <div className="row">
+        <div className="col-10 col-md-4">
+          <form onSubmit={handleSubmit}>
+            <input
+              type="search"
+              placeholder="Enter a city..."
+              required
+              id="city-name"
+              onChange={updateCity}
+            />
+            <input type="submit" id="enter" className="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
   );
 
   if (loaded) {
@@ -48,7 +54,8 @@ export default function Temperature(props) {
         {form}
         <div className="Temperature">
           <h1>{city}</h1>
-          <div className="temperature-data">
+
+          <div className="row temperature-data">
             <div className="temperature-actual">
               <span className="icon-image">
                 <img
@@ -60,6 +67,7 @@ export default function Temperature(props) {
               <span>{Math.round(weather.temperature)}</span>
               <span>°C</span>
             </div>
+
             <div className="more-data">
               <div>
                 <span>Monday 10:00</span>, <span>{weather.description}</span>
