@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -16,8 +17,9 @@ export default function Weather(props) {
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
       city: response.data.name,
-      date: "Monday, 10:00",
+      date: new Date(response.data.dt * 1000),
     });
+    console.log(response);
   }
 
   function handleSubmit(event) {
@@ -71,7 +73,10 @@ export default function Weather(props) {
 
             <div className="more-data">
               <div>
-                <span>{weather.date}</span>, <span>{weather.description}</span>
+                <span>
+                  <FormattedDate date={weather.date} />
+                </span>
+                , <span>{weather.description}</span>
               </div>
               <div>
                 Humidity:{" "}
