@@ -59,17 +59,17 @@ form {
 }
 
 .icon-image {
-  padding: 0;
-  width: 80px;
-  margin: 0;
+  padding: 0 auto;
+  margin: 0 15px;
+  display: flex;
   text-align: center;
-  vertical-align: top;
 }
 
 .degrees {
   font-size: 27px;
   font-weight: 300;
   color: var(--dark-blue);
+  margin: 0 5px;
 }
 
 .more-data {
@@ -100,13 +100,6 @@ form {
 .day {
   font-size: 27px;
   color: var(--pink);
-}
-
-.img {
-  width: 80px;
-  display: block;
-  padding: 0;
-  margin: 0;
 }
 
 .forecast-temperature {
