@@ -91,28 +91,3 @@ form {
 .more-data strong {
   color: var(--pink);
 }
-
-.prognoses {
-  margin: 45px auto;
-}
-
-.forecast {
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-}
-
-.forecast-container {
-  display: grid;
-}
-
-.day {
-  font-size: 27px;
-  color: var(--pink);
-}
-
-.forecast-temperature {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-}

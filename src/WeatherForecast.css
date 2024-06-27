@@ -1,0 +1,32 @@
+.WeatherForecast {
+  margin: 60px auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.forecast-container {
+  display: grid;
+  border: 5px solid var(--light-purple);
+  background: white;
+  padding: 8px 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(42, 149, 232, 0.2);
+}
+
+.forecast-day {
+  font-size: 28px;
+  color: black;
+  font-weight: bold;
+}
+
+.forecast-temperature {
+  color: black;
+  margin-top: 5px;
+  padding: 0 5px;
+  font-weight: 600;
+}
+
+.forecast-min-temperture {
+  opacity: 0.6;
+}
