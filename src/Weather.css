@@ -65,11 +65,20 @@ form {
   text-align: center;
 }
 
+.degrees-data {
+  display: flex;
+  align-items: center;
+}
+
 .degrees {
-  font-size: 27px;
+  font-size: 29px;
   font-weight: 300;
   color: var(--dark-blue);
   margin: 0 5px;
+}
+
+.degrees-bold {
+  font-weight: 600;
 }
 
 .more-data {
