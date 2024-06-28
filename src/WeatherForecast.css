@@ -7,7 +7,6 @@
 
 .forecast-container {
   display: grid;
-  border: 2px solid var(--light-purple);
   background: white;
   padding: 8px 15px;
   border-radius: 12px;
